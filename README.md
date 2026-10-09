@@ -4,7 +4,9 @@
 
 单文件网页第一人称 **波次生存射击游戏**。打开 `index.html` 即玩 —— 无后端、无构建步骤、无需安装，存档保存在浏览器本地。
 
-**[▶ 在线试玩 · Play now](https://zwkwwwwww.github.io/null-sector/)** ｜ [MOD 编辑器](https://zwkwwwwww.github.io/null-sector/mod-studio.html)
+**[▶ 在线试玩 · Play now](https://zwkwwwwww.github.io/null-sector/)** ｜ [MOD 编辑器](https://zwkwwwwww.github.io/null-sector/mod-studio.html) ｜ [🧪 测试版 v3.4.20](https://zwkwwwwww.github.io/null-sector/beta.html)
+
+> **两个在线版本**：`index.html` 是 v3.4.14；`beta.html` 是较新的 **v3.4.20 测试版**，详见下方[版本说明](#版本与测试版)。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -105,7 +107,8 @@ MOD 可以只包含任一区块（纯武器 / 纯敌人 / 纯机制 / 纯地图�
 
 ```
 null-sector/
-├── index.html          # 游戏本体（单文件）
+├── index.html          # 游戏本体 v3.4.14（单文件）
+├── beta.html           # 测试版 v3.4.20（单文件）
 ├── mod-studio.html     # 可视化 MOD 编辑器（单文件）
 ├── docs/
 │   ├── CHANGELOG.md    # v3.1 变更说明
@@ -113,6 +116,24 @@ null-sector/
 ├── LICENSE
 └── README.md
 ```
+
+## 版本与测试版
+
+仓库同时保留两条开发线，两者都是可直接打开的单文件：
+
+| 文件 | 内部版本 | 说明 |
+| --- | --- | --- |
+| `index.html` | v3.4.14 | 稳定线，即上面的「在线试玩」 |
+| `beta.html` | **v3.4.20** | 测试线，含尚未长期验证的新系统 |
+
+**beta.html（v3.4.20）相对稳定版新增：**
+
+- **作战模式选择**（`NS36_MAPMODE` v3.4.19）：普通模式 = 改动后地图 + 新增地图，含复杂地形与多层结构；快速模式 = 仅 6 张原始地图、无障碍加料、节奏更快
+- **敌人寻路**：导航网格（navmesh）驱动，敌人绕障与多层地形下的追击行为更合理
+- **`NS36_TOWER` / `NS36_JUMP`**（v3.4.20）：新增塔状结构与跳跃相关改动
+- 稳定线上的移动端 HUD 与触屏改动全部包含在内（v3.4.15–v3.4.20 为增量叠加）
+
+测试线仍在验证中，遇到问题请以 `index.html` 为准。
 
 ## 技术栈
 
