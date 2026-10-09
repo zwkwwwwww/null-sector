@@ -1,0 +1,14 @@
+# 系统文件
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+*~
+
+# 备份与临时文件
+*.bak
+*.tmp
