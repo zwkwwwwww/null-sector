@@ -4,18 +4,24 @@
 
 单文件网页第一人称 **波次生存射击游戏**。打开 `index.html` 即玩 —— 无后端、无构建步骤、无需安装，存档保存在浏览器本地。
 
+**[▶ 在线试玩 · Play now](https://zwkwwwwww.github.io/null-sector/)** ｜ [MOD 编辑器](https://zwkwwwwww.github.io/null-sector/mod-studio.html)
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 ---
 
 ## 快速开始
 
+**直接玩**：点击上面的「在线试玩」，或在本地打开 `index.html`。
+
+**本地开发**：
+
 ```bash
 git clone https://github.com/zwkwwwwww/null-sector.git
 cd null-sector
 ```
 
-然后用浏览器打开 `index.html` 即可（或起一个本地静态服务器：`python -m http.server 8000`，访问 <http://localhost:8000>）。
+然后用浏览器打开 `index.html`（或起一个本地静态服务器：`python -m http.server 8000`，访问 <http://localhost:8000>）。
 
 首次运行需要联网 —— three.js r128 与后处理着色器从 CDN 拉取；引擎加载完成后即可离线游玩。
 
